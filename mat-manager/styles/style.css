@@ -1,0 +1,167 @@
+body {
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    
+}
+
+header {
+    background-color: #000;
+    color: #FFFFE0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer {
+    background-color: #000;
+    color: #FFFFE0;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #fbff00;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    background-color: #666;
+}
+
+.container {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+.container h2 {
+    color: #ffffff;
+}
+
+.container form {
+    background-color: #FFF;
+    padding: 30px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.container label {
+    display: block;
+    margin: 10px 0;
+    color: #000;
+}
+
+.container input[type="text"],
+.container input[type="password"],
+.container input[type="email"],
+.container input[type="number"],
+.container input[type="button"]
+ {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+
+.container input[type="submit"] {
+    background-color: #000;
+    color: #FFFFE0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.container input[type="submit"]:hover {
+    background-color: #333;
+}
+
+.ok{
+    background-color: rgb(20, 220, 20);
+    color: black;
+}
+
+.bad {
+    background-color: crimson;
+    color: black;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+/* Estilos para la barra de navegación */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li {
+    margin: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fbff00;
+    font-weight: bold;
+
+}
+
+/* Estilos para el menú desplegable en dispositivos móviles */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        left: 0;
+        text-align: center;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+
+/* Estilos del logo */
+.logo {
+    max-width: 100%; 
+}
+
+.logo img {
+    width: 100%; /* El logo ocupará todo el ancho del contenedor */
+    height: auto; /* La altura se ajustará proporcionalmente al ancho */
+    display: block; /* Elimina espacio adicional alrededor de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente si el contenedor es más grande */
+}
+
+
